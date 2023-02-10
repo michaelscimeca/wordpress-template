@@ -1,0 +1,27 @@
+#module-one-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+  transform: translate(100%, 0);
+  transition: transform $module-transition-speed $module-transition-speed;
+  @apply bg-primary;
+
+  &.active {
+    transform: translate(0, 0);
+  }
+
+  button#js-close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    @apply bg-white text-black p-2;
+  }
+}

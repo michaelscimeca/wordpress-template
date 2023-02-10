@@ -1,0 +1,102 @@
+/******************************************************************
+Theme Name: NormCore
+Theme URI:
+Description: Theme description
+Author: Good Giant
+Author URI: http://goodgiant.com
+Version: 2.0
+
+License:
+License URI:
+*/
+
+@import "/node_modules/video.js/src/css/vjs.scss";
+
+@import "./library/scss/global/settings/util/tailwind";
+@import "./library/scss/global/settings/util/laconic";
+@import "./library/scss/global/settings/fonts";
+@import "./library/scss/global/settings/global";
+@import "./library/scss/global/settings/framework/grid-framework";
+@import "./library/scss/global/settings/framework/section";
+
+@import "./library/scss/global/settings/transition/transition-variables";
+@import "./library/scss/global/helpers";
+
+@import "./library/scss/global/settings/content-setup/headline-content-groups";
+@import "./library/scss/global/settings/content-setup/content-groups";
+// @import "./library/scss/global/settings/content-setup/content-groups-transition";
+
+@import "./library/scss/global/settings/btn/btn";
+@import "./library/scss/global/settings/btn/btn-transition";
+
+@import "./library/scss/global/form/form";
+@import "./library/scss/global/form/ninja-default-styles";
+
+@import "./library/scss/global/package-modules/plyr/plyr";
+@import "./library/scss/global/package-modules/slick/slick";
+@import "./library/scss/global/package-modules/slick/slick-theme";
+@import "./library/scss/global/package-modules/scroll/locomotive-scroll";
+@import "./library/scss/global/package-modules/split-text/split-text";
+@import "./library/scss/global/package-modules/magnetic-btn/magnetic-btn";
+// @import "./library/scss/global/package-modules/in-view/in-view";
+
+@import "./library/scss/global/nav/main-navs";
+@import "./library/scss/global/footer/footer";
+
+// @import "./library/scss/global/nav/main-nav-animation";''
+@import "./library/scss/component-styles/component/hero/hero-text";
+@import "./library/scss/component-styles/component/hero/hero-image";
+@import "./library/scss/component-styles/component/hero/hero-video";
+@import "./library/scss/component-styles/component/hero/hero-slider-image";
+@import "./library/scss/component-styles/component/hero/hero-slider-video";
+@import "./library/scss/component-styles/component/slider/slider-image-gallery";
+@import "./library/scss/component-styles/component/slider/slider-video";
+@import "./library/scss/component-styles/component/slider/slider-quote";
+@import "./library/scss/component-styles/component/slider/slider-text-image";
+@import "./library/scss/component-styles/component/slider/slider-image-gallery-thumbnail";
+@import "./library/scss/component-styles/component/slider/slider-small-image-gallery";
+
+@import "./library/scss/component-styles/component/sticky-slide-up";
+
+@import "./library/scss/component-styles/component/grid/grid-card";
+@import "./library/scss/component-styles/component/grid/grid-icon-card";
+@import "./library/scss/component-styles/component/grid/grid-of-post";
+@import "./library/scss/component-styles/component/grid/grid-posttype-card";
+@import "./library/scss/component-styles/component/grid/grid-page"
+;
+@import "./library/scss/component-styles/component/breadcrumb";
+
+@import "./library/scss/component-styles/component/accordion";
+@import "./library/scss/component-styles/component/cta";
+@import "./library/scss/component-styles/component/text-image";
+@import "./library/scss/component-styles/component/wysiwyg";
+@import "./library/scss/component-styles/component/marquee";
+@import "./library/scss/component-styles/component/video-list";
+@import "./library/scss/component-styles/component/two-up";
+@import "./library/scss/component-styles/component/two-up-list";
+@import "./library/scss/component-styles/component/explore";
+@import "./library/scss/component-styles/component/contact";
+@import "./library/scss/component-styles/component/logo-soup";
+@import "./library/scss/component-styles/component/price-cards";
+@import "./library/scss/component-styles/component/modules/notification";
+@import "./library/scss/component-styles/component/modules/cookie-notification";
+@import "./library/scss/component-styles/component/fetch-api";
+@import "./library/scss/component-styles/component/php-search-post";
+@import "./library/scss/component-styles/component/single-column-text";
+@import "./library/scss/component-styles/component/two-column-content";
+@import "./library/scss/component-styles/component/image";
+@import "./library/scss/component-styles/component/social-icons";
+@import "./library/scss/component-styles/component/sticky-slide-up-fixed";
+@import "./library/scss/component-styles/component/scroll-text";
+@import "./library/scss/component-styles/component/rotate-circle-text";
+@import "./library/scss/component-styles/component/text-360-video";
+
+@import "./library/scss/module/module";
+@import "./library/scss/pages/four_oh_four";
+@import "./library/scss/pages/style-guide";
+
+@import "./library/scss/post/entertainment";
+@import "./library/scss/post/entertainment-detail";
+
+// @import "./library/scss/component-styles/animation/cta-animation";
+@import "./library/scss/component-styles/transitions/_magic-text";

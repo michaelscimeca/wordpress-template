@@ -1,0 +1,29 @@
+<?php get_template_part( 'template-parts/component/content', 'hero-image-slider-component', [
+	'content_choice' => get_field('content_choice'),
+	'hero_image_slider' => get_field('hero_image_slider')
+]); ?>
+
+<?php get_template_part( 'template-parts/component/content', 'hero-video-slider-component', [
+	'content_choice' => get_field('content_choice'),
+	'hero_video_slider' => get_field('hero_video_slider')
+]); ?>
+
+<?php get_template_part( 'template-parts/component/content', 'image-slider-gallery-component', ['image_slider_gallery' => get_field('image_slider_gallery')]); ?>
+
+<?php get_template_part( 'template-parts/component/content', 'module-component'); ?>
+
+<?php get_template_part( 'template-parts/component/comp/content', 'btn-component', ['button' => get_field('button')]); ?>
+
+<?php get_template_part( 'template-parts/component/content', 'accordion-component', ['accordion_list' => get_field('accordion_list')]); ?>
+
+<?php get_template_part( 'template-parts/component/content', 'card-grid', ['card_list' => get_field('card_list')]); ?>
+
+<?php get_template_part( 'template-parts/component/content', 'quote-slider-component', ['quote_slider' => get_field('quote_slider')]); ?>
+
+<?php get_template_part( 'template-parts/component/content', 'logo-soup-component', ['logo_soup' => get_field('logo_list')]); ?>
+
+<?php get_template_part( 'template-parts/component/content', 'cta-component', ['cta_section' => get_field('cta_section')]); ?>
+
+<?php get_template_part( 'template-parts/component/content', 'grid-qa-component'); ?>
+
+<?php get_template_part( 'template-parts/component/content', 'text-image-component', ['text_image_section' => get_field('text_image_section')]); ?>

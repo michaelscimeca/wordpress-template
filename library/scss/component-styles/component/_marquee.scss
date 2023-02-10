@@ -1,0 +1,68 @@
+$height: 7.167vw;
+$speed: 35s;
+
+section#js-infinity-scroll {
+  overflow: hidden;
+  width: 100vw;
+  .slick-track {
+    transition-timing-function: linear;
+    .slick-slide {
+      // @apply bg-gray-200 ;
+
+      > div {
+        @apply mx-4;
+      }
+    }
+
+    .item {
+      display: flex!important;
+      min-height: 300px;
+      min-width: 300px;
+      @apply items-center justify-center  bg-gray-300 rounded;
+    }
+  }
+}
+
+section#marquee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  overflow: hidden;
+  will-change: transform;
+
+  .scroll-text-container {
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    min-width: 100%;
+    will-change: transform;
+
+    .js-scroll-text {
+      display: flex;
+      align-items: center;
+      height: $height;
+      @apply shrink-0;
+
+      &.run {
+        animation: marquee $speed linear infinite;
+      }
+
+      span {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: $height;
+        @apply pt-2 pb-2 pl-3 pr-3;
+      }
+    }
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }}

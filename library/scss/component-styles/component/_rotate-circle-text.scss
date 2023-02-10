@@ -1,0 +1,29 @@
+#scroll-down-rotate {
+  position: fixed;
+  bottom: 50px;
+  right: 0px;
+  height: 150px;
+  width: 150px;
+  will-change: transform;
+  z-index: 333;
+  animation: rotate 28s linear infinite;
+
+  .cls-1 {
+    fill: theme('colors.primary');
+  }
+
+  #js-rotate{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    will-change: transform;
+    transition: transform 300ms linear;
+  }
+
+  @keyframes rotate {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(360deg);}
+  }
+}

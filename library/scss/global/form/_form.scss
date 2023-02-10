@@ -1,0 +1,42 @@
+textarea:focus, input:focus{
+  outline: none;
+}
+
+input,
+textarea {
+  @apply py-3 px-4;
+  position: static;
+  border: 1px solid rgba(28, 25, 23, 0.1);
+}
+input[type="text"]:focus {
+  // border: 1px solid green;
+}
+input[type="text"]:focus {
+  // border: 1px solid green;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+  box-shadow: 0 0 0 40px #5c5472 inset !important;
+}
+::placeholder { /* Most modern browsers support this now. */
+  // color: rgba($gray-600, 1);
+  @apply text-gray-400;
+}
+input:-webkit-autofill{
+  // -webkit-text-fill-color: blue!important;
+}
+
+/************************************
+* Browser Detectors classes
+************************************/
+// .is_ios11 &,
+// .is_ios12 &,
+// .is_ios13 &,
+// .is_ie &,
+// .is_edge &,
+// .is_chrome &,
+// .is_ff &,
+// .is_safari &,
+// .is_android &

@@ -1,0 +1,48 @@
+section#cta {
+  text-align: center;
+  &.js-ae {
+    h3 {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: transform, opacity;
+      transition-duration: $default-transition, $default-transition;
+      transition-timing-function: $bez-default;
+    }
+
+    p {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: transform, opacity;
+      transition-duration: $default-transition, $default-transition;
+      transition-timing-function: $bez-default;
+
+    }
+
+    .btn-animation {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: transform, opacity;
+      transition-duration: $default-transition, $default-transition;
+      transition-timing-function: $bez-default;
+    }
+    &.js-active {
+      h3 {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+
+      p {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+
+      .btn-animation {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+  }
+
+
+
+}

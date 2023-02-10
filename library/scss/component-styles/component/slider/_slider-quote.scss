@@ -1,0 +1,65 @@
+section#js-quote-slider {
+  width: 100%;
+  overflow: hidden;
+
+  .swiper-wrapper {
+    height: 100%;
+    width: 100%;
+
+
+    blockquote {
+      position: relative;
+      @apply bg-gray-500 pt-8 pr-4 pb-5 pl-4  ml-4 mr-4;
+
+      &:before {
+        content: '';
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: .5;
+        background-image: url($theme-path + 'img/quote_icon.svg');
+        @apply top-3 left-4 h-5 w-5;
+      }
+
+      h4 {
+        font-size: r-clamp(rem(16), rem(40),rem($fontScaleStop), rem($fontScaleBreak));
+        line-height: r-clamp(rem(23), rem(40),rem($fontScaleStop), rem($fontScaleBreak));
+        @apply mb-1;
+      }
+
+      p {
+        font-size: r-clamp(rem(16), rem(30),rem($fontScaleStop), rem($fontScaleBreak));
+        line-height: r-clamp(rem(23), rem(40),rem($fontScaleStop), rem($fontScaleBreak));
+        @apply mb-1;
+
+        &:nth-child(1) {
+          @apply mt-0;
+        }
+      }
+
+      .name {
+        font-size: r-clamp(rem(16), rem(20),rem($fontScaleStop), rem($fontScaleBreak));
+        line-height: r-clamp(rem(23), rem(30),rem($fontScaleStop), rem($fontScaleBreak));
+      }
+
+      &.quote-lg {
+        &:before {
+          @apply h-8 w-8 top-3 left-3;
+        }
+        p {
+          font-size: r-clamp(rem(16), rem(50),rem($fontScaleStop), rem($fontScaleBreak));
+          line-height: r-clamp(rem(23), rem(40),rem($fontScaleStop), rem($fontScaleBreak));
+        }
+      }
+      &.quote-sm {
+        &:before {
+          @apply h-4 w-4 top-1 left-2;
+        }
+        p {
+          font-size: r-clamp(rem(16), rem(50),rem($fontScaleStop), rem($fontScaleBreak));
+          line-height: r-clamp(rem(23), rem(40),rem($fontScaleStop), rem($fontScaleBreak));
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+section#two-column-content {
+  position: relative;
+  overflow: hidden;
+
+
+  .column {
+    &:last-child {
+      @apply mt-4;
+      @screen md {
+        @apply mt-0;
+      }
+    }
+  }
+
+  p {
+    @apply mb-2 text-white;
+
+    &:last-child {
+      @apply mb-0;
+    }
+  }
+}

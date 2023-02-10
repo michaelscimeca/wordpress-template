@@ -1,0 +1,44 @@
+section#grid-of-post {
+  position: relative;
+
+  ul#grid-cont{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    @apply gap-8 grid-cols-1;
+
+    @screen md {
+      @apply grid-cols-2;
+    }
+
+    @screen lg {
+      @apply grid-cols-3;
+    }
+
+    li {
+      display: flex;
+      flex-direction: row;
+      @apply text-gray-900;
+
+      .card-cont {
+        width: 100%;
+
+        .image-aspect {
+          position: relative;
+
+          img {
+                aspect-ratio: 16/9;
+          }
+        }
+
+        time {
+          display: block;
+        }
+
+        .standard-card-content {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

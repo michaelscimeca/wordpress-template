@@ -1,0 +1,217 @@
+.nf-form-content {
+  padding: 0!important;
+}
+.nf-form-content {
+  max-width: revert!important;
+}
+
+.nf-form-cont {
+  display: block;
+  /// Resets
+  .nf-form-content .list-select-wrap .nf-field-element>div,
+  .nf-form-content input:not([type=button]),
+  .nf-form-content textarea {
+    border: 0;
+  }
+
+  .listradio-wrap .nf-field-element label,
+  .checkbox-container.label-right label {
+    margin-left: 0!important;
+  }
+
+  .listradio-wrap .nf-field-element label.nf-checked-label:before {
+    @apply relative left-0 bottom-0 top-0;
+    border-radius: 0;
+  }
+
+  .checkbox-wrap .nf-field-element label:after,
+  .checkbox-wrap .nf-field-label label:after,
+  .listcheckbox-wrap .nf-field-element label:after,
+  .listcheckbox-wrap .nf-field-label label:after {
+    @apply hidden;
+  }
+
+  .nf-error.field-wrap .nf-field-element:after {
+    @apply hidden;
+  }
+
+  .nf-form-cont .list-radio-wrap .nf-field-label  {
+    label {
+      &:before {
+        @apply hidden;
+      }
+    }
+  }
+
+  .checkbox-container.label-right label {
+    @apply ml-0;
+  }
+
+  .list-radio-wrap .nf-field-label label:before {
+    display: none!important;
+  }
+
+  #nf-form-title-1 {
+    @apply hidden;
+  }
+
+  .nf-form-fields-required {
+    @apply hidden;
+  }
+
+  .ninja-forms-req-symbol {
+    @apply hidden;
+  }
+
+  /// Resets End
+
+  //   select {
+  //     -webkit-appearance: none;
+  // -moz-appearance: none;
+  // appearance: none;
+  //   }
+
+  // Input Fields Labels
+  .field-wrap .nf-field-label label {
+    @apply text-gray-700;
+  }
+  /// Radio Title
+  .list-radio-wrap .nf-field-label label {
+    @apply text-gray-700;
+  }
+  /// Radio List
+  .list-radio-wrap .nf-field-element input[type=radio] + label {
+    @apply text-gray-700;
+  }
+  /// Checkbox Title
+  .checkbox-wrap .nf-field-label label {
+    @apply text-gray-700;
+    font-weight: 500;
+  }
+  .nf-error .nf-error-msg {
+    @apply text-gray-700;
+  }
+  /// Focs on Multi Select
+  .nf-form-content select.ninja-forms-field:focus {
+    @apply text-gray-700 bg-gray-500;
+  }
+  .nf-form-content .listselect-wrap .nf-field-element div,
+  .nf-form-content .ninja-forms-field{
+    border: 0;
+    // @include btn;
+  }
+  .nf-form-content input[type=button] {
+    @include btn;
+  }
+
+  select {
+    appearance: none;
+    outline: none;
+    box-shadow: none !important;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  select option:hover,
+  select option:focus,
+  select option:active,
+  select option:checked {
+    @apply text-gray-300;
+    font-weight: bold;
+    // background: linear-gradient(rgba($primary, 0.3), rgba($primary, 0.8));
+  }
+
+  // Input Fields
+  .nf-form-content,
+  .nf-field-element {
+    input[type=text],
+    input[type=email],
+    textarea,
+    select.ninja-forms-field option {
+      // @include p-medium;
+      @apply text-gray-700 bg-gray-300;
+
+    }
+
+    input[type=text] {
+      color: black;
+      &:focus {
+        @apply text-gray-700 bg-gray-500;
+      }
+    }
+
+    input[type=email] {
+      color: black;
+      &:focus {
+        @apply text-gray-700 bg-gray-500;
+      }
+    }
+
+    textarea {
+      color: black;
+      &:focus {
+        @apply text-gray-700 bg-gray-500;
+      }
+    }
+  }
+
+  /// Hover Inputs
+  .nf-form-content button:hover,
+  .nf-form-content input[type=button]:hover,
+  .nf-form-content input[type=submit]:hover {
+    // background-color: rgba($primary, 0.3);
+    // color: yellow;
+  }
+
+
+  .checkbox-wrap,
+  .list-radio-wrap {
+    input[type=checkbox],
+    input[type=radio] {
+      display: none;
+    }
+
+    .nf-field-element,
+    .nf-field-label {
+      label:after{
+        display: none;
+      }
+
+      label:before {
+        content:'';
+        position: relative;
+        left: 0;
+        display: inline-block;
+        padding: 10px;
+        margin-right: 5px;
+        vertical-align: middle;
+        -webkit-appearance: none;
+        background-color: transparent;
+        border: 2px solid gray;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+        cursor: pointer;
+        opacity: 1;
+      }
+      // Checked styling
+      label.nf-checked-label:before {
+        @apply bg-gray-500;
+      }
+    }
+  }
+  // Submit Button
+  .submit-wrap {
+    .nf-field-element {
+      input {
+        text-transform: uppercase;
+        line-height: 27px;
+        // @apply bg-gray-500 text-white;
+        @include defualt-btn;
+      }
+    }
+  }
+
+  .nf-after-form-content {
+    .nf-error-msg, .ninja-forms-req-symbols {
+      @apply bg-gray-500 text-white p-2;
+    }
+  }
+}

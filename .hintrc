@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "will-change",
+          "transform",
+          "animation",
+          "-webkit-text-fill-color",
+          "flex-direction",
+          "order"
+        ]
+      }
+    ]
+  }
+}

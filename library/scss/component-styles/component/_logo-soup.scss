@@ -1,0 +1,26 @@
+section#logo-soup {
+
+  .column {
+    display: flex;
+
+    &:last-child {
+      justify-content: flex-end;
+    }
+  }
+
+  #clients {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    grid-template-columns: 33% 33% 33%;
+
+    li {
+      @apply p-2;
+
+      img {
+        max-height: 50px;
+      }
+    }
+  }
+}

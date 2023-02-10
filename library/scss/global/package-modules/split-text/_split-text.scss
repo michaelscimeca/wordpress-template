@@ -1,0 +1,155 @@
+// .js-ae {
+//
+//   .js-headline-split-text {
+//     .above-headline {
+//       .line {
+//         overflow: hidden;
+//
+//         .word {
+//           opacity: 0;
+//           transform: translateY(100px);
+//           transition: transform;
+//           transition-duration: 500ms;
+//           transition-timing-function: $bez-default;
+//
+//           .char {
+//
+//           }
+//         }
+//
+//         @for $i from 1 through 30 {
+//           .word-#{$i} {
+//             transition-delay: $i * 20ms;
+//             .char {
+//             }
+//           }
+//         }
+//       }
+//     }
+//
+//     h1,
+//     h2,
+//     h3,
+//     h4,
+//     h5,
+//     h6 {
+//       .line {
+//
+//         .word {
+//           will-change: transform;
+//           transform: translateY(100px);
+//           transition: transform;
+//           transition-duration: 500ms;
+//           transition-timing-function: $bez-default;
+//           overflow: hidden;
+//
+//           .char {
+//             // transform: rotate(8deg);
+//             // transition: transform;
+//             // transition-duration: 1600ms;
+//             // transition-timing-function: $bez-default;
+//           }
+//         }
+//
+//         @for $i from 1 through 130 {
+//           .word-#{$i} {
+//             transition-delay: $i * 10ms;
+//
+//             .char {
+//             }
+//           }
+//         }
+//       }
+//     }
+//
+//     .line {
+//       line-height: 1.2;
+//     }
+//
+//     p {
+//       opacity: 0;
+//       transition: opacity;
+//       transition-duration: 500ms;
+//       transition-timing-function: $bez-default;
+//
+//       .line {
+//         overflow: hidden;
+//
+//         .word {
+//           will-change: transform;
+//           transform: translateY(100px);
+//           transition: transform;
+//           transition-duration: 500ms;
+//           transition-timing-function: $bez-default;
+//
+//           .char {
+//             transform: translateY(100px);
+//             transition: transform;
+//             transition-duration: 500ms;
+//             transition-timing-function: $bez-default;
+//           }
+//         }
+//
+//         @for $i from 1 through 130 {
+//           .word-#{$i} {
+//             .char {
+//               // transition-delay: $i * 20ms;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+//
+//   &.js-active  {
+//
+//     .js-headline-split-text {
+//       .above-headline {
+//         .line {
+//           .word {
+//             opacity: 1;
+//             transform: translateY(0px);
+//
+//             .char {
+//
+//             }
+//           }
+//         }
+//       }
+//
+//       h1,
+//       h2,
+//       h3,
+//       h4,
+//       h5,
+//       h6 {
+//         .line {
+//           .word {
+//             transform: translateY(0px);
+//             .char {
+//               transform: translateY(0px);
+//
+//               // opacity: 1;
+//               // transform: translateY(0px);
+//             }
+//           }
+//         }
+//       }
+//       p {
+//         opacity: 1;
+//         .line {
+//           .word {
+//             opacity: 1;
+//             transform: translateY(0px);
+//
+//             .char {
+//               transform: translateY(0px);
+//
+//             }
+//           }
+//         }
+//       }
+//     }
+//
+//   }
+// }

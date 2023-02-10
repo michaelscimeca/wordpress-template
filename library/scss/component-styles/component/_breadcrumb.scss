@@ -1,0 +1,9 @@
+#breadcrumb {
+  list-style: none;
+  @apply py-1 px-2 my-2 text-white;
+
+  a {
+    @apply text-primary;
+    text-decoration: none;
+  }
+}

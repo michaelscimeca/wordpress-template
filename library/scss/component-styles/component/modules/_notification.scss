@@ -1,0 +1,33 @@
+#js-notification {
+  position: absolute;
+  display: none;
+  top: 32px;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  margin: 0 auto;
+
+  &.active {
+    display: block;
+  }
+  button#js-close-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto 0;
+    @apply items-center text-white p-2;
+    width: 10px;
+    height: 10px;
+  }
+
+  #container {
+    position: relative;
+    overflow: hidden;
+    @apply bg-gray-900 text-white p-2 rounded-xl;
+    // @apply bg-gray-500 text-white border-full;
+  }
+}

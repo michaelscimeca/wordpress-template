@@ -1,0 +1,43 @@
+section#two-up-list {
+  // @apply bg-gray-300;
+
+  ul {
+    @apply columns-1 gap-4;
+    @screen md {
+      @apply columns-2 gap-4;
+    }
+    
+    li {
+      position: relative;
+      display: inline-block;
+      @apply mb-6 pl-4;
+
+      &:before {
+        content: '+';
+        position: absolute;
+        top: 0;
+        left: 0;
+        @apply text-gray-500;
+        height: 20px;
+        width: 20px;
+        font-size: em(40);
+      }
+
+      &:last-child {
+        @apply mb-0;
+      }
+
+      p {
+        font-size: r-clamp(rem(16), rem(25),rem($fontScaleStop), rem($fontScaleBreak));
+        line-height: r-clamp(rem(25), rem(35),rem($fontScaleStop), rem($fontScaleBreak));
+        &:last-child {
+          @apply mb-0;
+        }
+      }
+
+      .btn-animation {
+        @apply mt-2;
+      }
+    }
+  }
+}

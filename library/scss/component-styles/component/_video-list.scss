@@ -1,0 +1,99 @@
+section#js-video-list {
+  // @apply bg-gray-300;
+
+  ul {
+    li {
+      display: flex;
+      pointer-events: auto;
+      @apply mb-12 pb-12 gap-8 border-b border-gray-500;
+
+      @include hover {
+        .js-play-btn {
+          @apply bg-black;
+          svg {
+            @apply fill-white;
+          }
+        }
+      }
+
+      &:last-child {
+        @apply mb-0 border-0;
+      }
+
+      .column-video-img-cont {
+        position: relative;
+        display: flex;
+
+        .play-btn {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          pointer-events: none;
+          height: 60px;
+          width: 60px;
+          border-radius: 50%;
+          transition: backgroud-color $btn-transition-speed $btn-transition;
+          @apply m-auto bg-white;
+
+          svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 25px;
+            width: 23px;
+            margin: auto;
+            transition: fill $btn-transition-speed $btn-transition;
+            z-index: 10;;
+            @applyfill-black;
+          }
+        }
+
+        img {
+          object-fit: cover;
+          margin: 0 auto;
+          pointer-events: none;
+        }
+      }
+
+      .column-video-content-cont {
+        @apply flex-1;
+
+        h1 {
+        }
+
+        p {
+        }
+      }
+    }
+  }
+}
+
+
+#js-video-list-module-container {
+  @apply fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center h-screen w-screen z-40 pointer-events-none opacity-0 bg-black/[.9];
+
+  &.show {
+    @apply opacity-100 pointer-events-auto;
+  }
+
+  #js-close-btn {
+    @apply absolute bg-white text-black;
+    top: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+  }
+
+  #js-video-container {
+    @apply w-full;
+    max-width: 590px;
+  }
+
+  #player {
+
+  }
+}

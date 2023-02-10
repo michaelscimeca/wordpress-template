@@ -1,0 +1,27 @@
+section#js-image-slider-gallery {
+  .image-aspect {
+    position: relative;
+    width: 100%;
+    @apply aspect-video;
+
+    .bg-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 10;
+      @apply aspect-[9/16];
+
+      .caption {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        @apply text-white bg-gray-500 p-2;
+      }
+    }
+  }
+}

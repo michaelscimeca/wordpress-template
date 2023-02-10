@@ -1,0 +1,23 @@
+section#hero-text {
+  position: relative;
+  width: 100vw;
+  text-align: center;
+  z-index: 2;
+
+  h1,
+  h2, {
+  }
+
+  p {
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    z-index: 20;
+  }
+}

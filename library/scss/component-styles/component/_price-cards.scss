@@ -1,0 +1,85 @@
+section#price-cards {
+  @apply text-center;
+
+  ul.price-card-container {
+    @apply grid gap-8	grid-cols-1 items-stretch justify-center w-full;
+
+    @screen md {
+      @apply grid-cols-2;
+    }
+
+    @screen lg {
+      @apply grid-cols-3;
+    }
+
+    .price-name {
+      position: relative;
+      width: 100vw;
+      height: 2px;
+      @apply my-3;
+
+      &::before {
+        position: absolute;
+        @apply bg-gray-500 px-2;
+        top: 50%;
+        left: 50%;
+        font-size: em(25);
+        font-weight: bold;
+        transform: translate(-50%, -50%);
+      }
+
+      &.basic {
+        @apply bg-gray-900;
+        &::before {
+          content: "Basic";
+        }
+      }
+      &.premium {
+        @apply bg-gray-900;
+        &::before {
+          content: "Premium";
+        }
+      }
+      &.gold {
+        @apply bg-gray-900;
+        &::before {
+          content: "Gold";
+        }
+      }
+    }
+
+    > li {
+      @apply bg-gray-300 rounded;
+
+      .card-box {
+        min-height: 300px;
+        @apply flex flex-col pb-4 justify-between;
+      }
+
+      .content {
+        @apply my-2;
+        h2,
+        h3,
+        h4 {
+          @apply m-0;
+        }
+        p {
+        }
+      }
+
+      ul.list {
+        @apply w-full flex flex-col justify-center items-center mb-4;
+
+        li {
+          @apply w-full flex justify-between items-center border-b border-gray-800 py-1 px-2;
+
+          .title {
+          }
+
+          .option{
+          }
+        }
+      }
+    }
+  }
+}

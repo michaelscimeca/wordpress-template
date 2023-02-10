@@ -1,0 +1,48 @@
+section#post-type-grid-cont {
+  display: inline-flex;
+  width: 100%;
+
+  ul#grid-cont {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    @apply gap-8 grid-cols-1;
+
+    @screen md {
+      @apply grid-cols-2;
+    }
+
+    @screen lg {
+      @apply grid-cols-3;
+    }
+
+    li {
+      @apply text-gray-900;
+        display: flex;
+        flex-direction: row;
+
+      .image-aspect {
+        position: relative;
+        aspect-ratio: 7/3;
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          object-fit: cover;
+          margin: 0 auto;
+        }
+      }
+
+      .card-cont {
+        width: 100%;
+      }
+
+      .standard-card-content {
+        text-align: center;
+      }
+    }
+  }
+}

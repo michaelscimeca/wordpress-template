@@ -1,0 +1,70 @@
+section#js-fetch-post-api {
+  position: relative;
+
+  &.loaded {
+    #container-ajxa  #loader {
+      opacity: 0;
+    }
+  }
+
+  #post-nav {
+    display: flex;
+
+    ul#js-button-category-choice {
+      display: flex;
+      li {
+        cursor: pointer;
+        @apply mr-2 p-2 bg-gray-500;
+
+        &.active {
+          @apply text-white bg-gray-800;
+        }
+      }
+    }
+
+    #js-upcoming-button {
+      display: inline-block;
+      li {
+        @apply bg-gray-500 text-black p-2 mr-1;
+        &.active {
+          @apply text-white bg-gray-800;
+        }
+      }
+    }
+
+  }
+
+  #container-ajxa {
+    position: relative;
+
+    #loader {
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      opacity: 100;
+      width: 60px;
+      height: 60px;
+
+      path {
+        @apply fill-gray-500;
+      }
+    }
+  }
+
+  #js-post-container {
+    position: relative;
+    @apply mt-2;
+    a {
+      display: block;
+      @apply mb-2;
+    }
+    article {
+      @apply p-3 bg-gray-500;
+
+      &:last-child {
+        @apply mb-0;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+#js-cookie-notification {
+  position: fixed;
+  width: 100%;
+  display: none;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  margin: 0 auto;
+  @apply bottom-2;
+
+  &.active {
+    display: block;
+  }
+
+  #container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    @apply bg-white text-gray-400 p-2 rounded-xl;
+
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      .accept,
+      .reject  {
+        @apply text-black bg-gray-400 py-1 px-2 rounded-xl;
+
+      }
+
+      .accept {
+        @apply mb-2;
+      }
+      .reject {
+      }
+    }
+  }
+}

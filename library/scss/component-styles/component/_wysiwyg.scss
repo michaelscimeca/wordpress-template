@@ -1,0 +1,157 @@
+section#wysiwyg {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  .wysiwyg-content-standard {
+    h1 {
+    }
+    h2 {
+    }
+    h3 {
+    }
+    h4 {
+    }
+    h5 {
+    }
+    h6 {
+    }
+    p {
+    }
+
+    ul {
+      @apply pl-2 mb-2;
+      margin: revert;
+
+      li {
+        position: relative;
+        list-style: none;
+        @apply mb-2;
+        padding-left: 10px;
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: -15px;
+          width: 12px;
+          height: 2px;
+          margin: auto;
+          background-color: theme('colors.primary');
+        }
+      }
+    }
+
+    // ol {
+    //   @apply mb-2;
+    //   margin: revert;
+    //   list-style: none;
+    //
+    //   li {
+    //     @apply mb-2;
+    //     counter-increment: item;
+    //     &:before {
+    //       content: counter(#{item}) ".";
+    //       margin-right: 10px;
+    //       text-align: center;
+    //       color: theme('colors.primary');
+    //     }
+    //   }
+    // }
+
+    strong,b {
+    }
+    i {
+    }
+    a {
+    }
+
+    div {
+      &.subheadline {
+        background-color: red;
+      }
+    }
+
+    p {
+
+      a {
+
+      }
+      span {
+        &.underline {
+          background-color: red;
+        }
+
+        &.xl {
+          background-color: red;
+        }
+        &.lg {
+          background-color: red;
+        }
+        &.md {
+          background-color: red;
+        }
+        &.sm {
+          background-color: red;
+        }
+      }
+    }
+
+    blockquote {
+      @apply  pl-4 my-4;
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 100%;
+        width: 2px;
+        border-radius: 4px;
+        background: theme('colors.primary');
+      }
+
+      p {
+        font-size: r-clamp(rem(16), rem(30),rem($fontScaleStop), rem($fontScaleBreak));
+        line-height: r-clamp(rem(23), rem(40),rem($fontScaleStop), rem($fontScaleBreak));
+        @apply mt-2 mb-0;
+
+        &:nth-child(1) {
+          @apply mt-0;
+        }
+
+        a {
+          color: theme('colors.primary');
+        }
+      }
+
+      &.quote-lg {
+        // &:before {
+        //   @apply h-8 w-8 top-3 left-3;
+        // }
+        p {
+          font-size: r-clamp(rem(16), rem(50),rem($fontScaleStop), rem($fontScaleBreak));
+          line-height: r-clamp(rem(23), rem(40),rem($fontScaleStop), rem($fontScaleBreak));
+        }
+      }
+      &.quote-sm {
+        // &:before {
+        //   left: 50%;
+        //   @apply h-4 w-4 top-1;
+        // }
+        p {
+          font-size: r-clamp(rem(16), rem(50),rem($fontScaleStop), rem($fontScaleBreak));
+          line-height: r-clamp(rem(23), rem(40),rem($fontScaleStop), rem($fontScaleBreak));
+        }
+      }
+    }
+    .wysiwyg {
+      display: inline-flex;
+    }
+  }
+}

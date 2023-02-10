@@ -1,0 +1,94 @@
+section#js-hero-video-slider {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+  h1,
+  h2 {
+    @apply text-white;
+  }
+
+  p {
+    @apply text-white;
+  }
+
+  .btn {
+    @apply pointer-events-auto;
+  }
+
+  .swiper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    @apply m-0;
+
+    .swiper-wrapper {
+      .swiper-slide {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+
+        #js-player {
+          height: 100vh;
+          width: 100vw;
+        }
+
+        iframe {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 100vw;
+          height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+          min-height: 100vh;
+          min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+          transform: translate(-50%, -50%);
+        }
+
+        video {
+          object-fit: contain;
+        }
+
+        .legible {
+          position: absolute;
+          height: 100vh;
+          width: 100vw;
+          background-repeat: no-repeat;
+          background-size: cover;
+          z-index: 10;
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+            pointer-events: none;
+            z-index: 50;
+            @apply bg-black/[0.6];
+          }
+        }
+      }
+    }
+  }
+
+  .content-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    text-align: center;
+    align-content: center;
+
+    &.single-content {
+      position: relative;
+      text-align: center;
+      pointer-events: none;
+    }
+  }
+}

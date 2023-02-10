@@ -1,0 +1,16 @@
+section#js-video-slider-gallery {
+
+  .swiper-wrapper {
+    @apply m-0;
+    height: 100%;
+    width: 100%;
+
+    .video-container {
+      overflow: hidden;
+    }
+
+    .caption {
+      @apply bg-gray-500 text-white p-2;
+    }
+  }
+}

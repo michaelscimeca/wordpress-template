@@ -1,0 +1,130 @@
+
+#main-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100%;
+  width: 100%;
+  @apply bg-white rounded-2xl;
+  min-height: 75px;
+
+  #main-logo {
+    width: 300px;
+    @apply bg-third;
+  }
+
+  .menu-main-nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    #menu-main-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      @screen md {
+        flex-direction: row;
+        width: auto;
+      }
+
+      li {
+        @apply py-2;
+        white-space: nowrap;
+        &:before {
+          @apply py-0;
+        }
+        @screen md {
+          @apply px-3 py-0;
+        }
+        a {
+          @apply text-gray-700;
+          @include hover {
+            @apply text-primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+#second-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  #sign-in {
+    position: relative;
+    white-space: nowrap;
+    @apply px-4;
+
+    &:before {
+      content: "\f007";
+      position: absolute;
+      left: 10px;
+      font-family: "Font Awesome 5 Free";
+      font-style: normal;
+      color: theme('colors.primary');
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+    }
+
+  }
+  #book-a-stay {
+    max-width: 200px;
+    width: 100%;
+    @apply px-2 bg-third;
+    white-space: nowrap;
+
+  }
+
+}
+
+ul#menu-footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  flex-direction: row;
+  text-align: center;
+  @screen sm {
+    text-align: right;
+  }
+
+  li {
+    width: 33%;
+    white-space: nowrap;
+    @apply mb-2;
+
+    a {
+      text-decoration: none;
+      @apply text-white;
+      @include hover {
+        @apply text-primary;
+      }
+    }
+  }
+}
+
+#main-nav .menu-main-nav-container ul#menu-main-nav,
+ul#menu-footer-nav {
+  li {
+    &.current_page_item,
+    &.current-menu-item {
+      a {
+        @apply text-primary;
+      }
+    }
+  }
+}

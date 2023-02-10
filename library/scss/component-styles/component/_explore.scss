@@ -1,0 +1,38 @@
+section#js-explore {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+
+  .swiper {
+    position: relative;
+    overflow: visible;
+    @apply left-2;
+    @screen md {
+      width: calc(100vw - 32px);
+    }
+
+    @screen 3xl {
+      left: revert;
+      right: calc(($max-grid-width/2) - 50vw - 16px);
+    }
+
+    .swiper-slide {
+      width: 100%;
+      @apply pr-2;
+
+      .container {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100vh;
+        font-size: r-clamp(rem(14), rem(16),rem($fontScaleStop), rem($fontScaleBreak));
+        @apply aspect-[3/4] p-4 bg-gray-500 text-white;
+
+      }
+    }
+  }
+}

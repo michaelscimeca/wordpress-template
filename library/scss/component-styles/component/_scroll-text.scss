@@ -1,0 +1,25 @@
+section#scroll-text {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 200;
+  height: 100%;
+  width: 100%;
+  transform: rotate(90deg);
+  transform-origin: top right;
+
+  #js-scroll-text {
+    width: 100%;
+    pointer-events: none;
+
+    .text {
+      display: inline-block;
+      white-space: nowrap;
+      text-transform: uppercase;
+      // margin: 1rem 0 0 39.25vw;
+      font-size: clamp(2rem, 2vw, 5.5rem);
+      will-change: transform;
+      @apply px-4 bg-primary text-white;
+    }
+  }
+}
